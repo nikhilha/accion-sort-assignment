@@ -1,6 +1,9 @@
 /*globals sortModule:false*/
 
 sortModule.service('SortService', function($http) {
+	/* Returns the JSONData to the calling function
+	 * Syntax to call : SortService.getData() 
+	 */
 	var getData = function() {
         return $http({
         	method:"GET", 
