@@ -6,19 +6,33 @@
   <title>Sort the table</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
+
+  <!-- DON'T EDIT MANUALLY -->
+  <!-- build:css css/lib.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/normalize.css">
+  <link rel="stylesheet" href="bower_components/main.css">
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css'>
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body>
-  <ng-view></ng-view>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <link rel="stylesheet" href="app.css">
+  
+  <!-- DON'T EDIT MANUALLY -->
+  <!-- build:js js/lib.js -->
+  <!-- bower:jsLib -->
+  <script src="bower_components/angular.js"></script>
+  <script src="bower_components/angular-route.js"></script>
+  <script src="bower_components/modernizr-2.8.3.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
   <script src="app.js"></script>
   <script src="sort/sort.js"></script>
   <script src="sort/SortController.js"></script>
   <script src="sort/SortService.js"></script>
+</head>
+<body>
+  <ng-view></ng-view>
 </body>
 </html>

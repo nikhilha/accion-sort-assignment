@@ -6,7 +6,5 @@ angular.module('myApp', [
   'SortModule'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/sort'});
+  $locationProvider.hashPrefix('!');  
 }]);
