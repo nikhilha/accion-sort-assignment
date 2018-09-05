@@ -18,6 +18,3 @@ Usage:
 
 CSS handling:
 - Bootstrap-combined has been imported and custom CSS has been handled as part of module
-
-
-App is hosted at https://sort-table.firebaseapp.com/#!/sort

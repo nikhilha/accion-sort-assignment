@@ -1,1 +1,50 @@
 <h1> Click on the header to sort by column</h1>
+
+<section>
+    <span class="label">Ordered By: {{orderByField}}, Reverse Sort: {{reverseSort}}</span><br><br>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>
+            <a ng-click="orderByField='userId'; reverseSort = !reverseSort">User ID 
+              <span ng-show="orderByField == 'userId'">
+                <span ng-show="!reverseSort">^</span>
+                <span ng-show="reverseSort">v</span>
+              </span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="orderByField='id'; reverseSort = !reverseSort">ID 
+              <span ng-show="orderByField == 'id'">
+                <span ng-show="!reverseSort">^</span>
+                <span ng-show="reverseSort">v</span></span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="orderByField='title'; reverseSort = !reverseSort">Title 
+              <span ng-show="orderByField == 'title'">
+                <span ng-show="!reverseSort">^</span>
+                <span ng-show="reverseSort">v</span>
+              </span>
+            </a>
+          </th>
+          <th>
+            <a ng-click="orderByField='body'; reverseSort = !reverseSort">Body 
+              <span ng-show="orderByField == 'body'">
+                <span ng-show="!reverseSort">^</span>
+                <span ng-show="reverseSort">v</span>
+              </span>
+            </a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="emp in data|orderBy:orderByField:reverseSort">
+          <td>{{emp.userId}}</td>
+          <td>{{emp.id}}</td>
+          <td>{{emp.title}}</td>
+          <td>{{emp.body}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>

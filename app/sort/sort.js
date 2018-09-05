@@ -1,25 +1,10 @@
-'use strict';
+/* globals angular:false*/
 
-angular.module('myApp.sort', ['ngRoute'])
+window.sortModule = angular.module('SortModule', ['ngRoute']);
 
-.config(['$routeProvider', function($routeProvider) {
+window.sortModule.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/sort', {
     templateUrl: 'sort/sort.html',
-    controller: 'SortCtrl'
+    controller: 'SortController'
   });
-}])
-
-.controller('SortCtrl', function($scope, $http) {
-  $scope.orderByField = 'userid';
-  $scope.reverseSort = false;
-
-  //this should be actually written in service and then called from controller
-  var getJSONData = function() {
-    $http.get("http://jsonplaceholder.typicode.com/posts")
-    .then(function(response) {
-        $scope.data = response.data;
-    });
-  }
-
-  getJSONData();
-});
+}]);

@@ -1,14 +1,14 @@
-'use strict';
+/* globals setContext:false */
 
-describe('myApp.sort module', function() {
+describe('SortModule', function() {
 
-  beforeEach(module('myApp.sort'));
+  beforeEach(module('SortModule'));
 
   describe('sort controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      //Unit test cases will be handled here
+      
     }));
 
   });
