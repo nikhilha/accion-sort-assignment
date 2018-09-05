@@ -5,8 +5,9 @@ This table data is captured from the json data.
 
 Project setup:
 - Clone the project
-- Do npm install
-- Do npm start
+- Do npm start (Will handle npm and bower install and starts the server)
+
+Access the url : "http://localhost:8000/#!/sort" to get the sort page
 
 Usage:
 - User can sort the table contents by:
